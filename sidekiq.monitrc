@@ -1,0 +1,3 @@
+check process sidekiq with pidfile /var/www/rails/findsyou/current/tmp/pids/sidekiq.pid
+      start program = "/sbin/start sidekiq"
+      stop program = "/sbin/stop sidekiq"
