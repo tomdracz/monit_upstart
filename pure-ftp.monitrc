@@ -1,3 +1,3 @@
-check process pure-ftp with pidfile /var/www/rails/findsyou/current/tmp/pids/pure-ftp.pid
+check process pure-ftp with pidfile /var/run/pure-ftpd.pid
       start program = "/sbin/start pure-ftp"
       stop program = "/sbin/stop pure-ftp"
