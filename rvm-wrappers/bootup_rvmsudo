@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+if [[ -s "/home/deploy/.rvm/gems/ruby-2.0.0-p247@findsyou/environment" ]]
+then
+  source "/home/deploy/.rvm/gems/ruby-2.0.0-p247@findsyou/environment"
+  exec /home/deploy/.rvm/bin/rvmsudo "$@"
+else
+  echo "ERROR: Missing RVM environment file: '/home/deploy/.rvm/gems/ruby-2.0.0-p247@findsyou/environment'" >&2
+  exit 1
+fi
