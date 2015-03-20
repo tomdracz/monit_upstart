@@ -1,0 +1,3 @@
+check process unicorn-fyb with pidfile /var/www/rails/findsyoubuyers/current/tmp/pids/unicorn.pid
+      start program = "/sbin/start unicorn-fyb"
+      stop program = "/sbin/stop unicorn-fyb"
